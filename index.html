@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+div {
+	left:10em; 
+	top:10em;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	border-radius: 6px;
+	font-family: 'impact';
+	font-size: 20px;
+	text-align: center;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0), 0 6px 20px 0 rgba(0,0,0,0);
+	animation-name: example;
+	animation-duration: 20s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	object-fit:cover;
+}
+
+
+@keyframes example {
+	0%   {
+		background-color:red; 
+		left:10em; 
+		top:5em;
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Safari */
+		transform: rotate(0deg);
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0), 0 6px 20px 0 rgba(0,0,0,0);
+		background-image:url(img/beer-advertising-2712521_1280.jpg);
+		object-fit:cover;
+	}
+	25%{
+		background-color:blue;
+		left:30em;
+		top:10em;
+		-ms-transform: rotate(360deg); /* IE 9 */
+		-webkit-transform: rotate(360deg); /* Safari */
+		transform: rotate(360deg);
+		width: 400px;
+		color:#FFF;
+		box-shadow: 0 8px 16px 0 rgba(1,1,1,1), 0 6px 20px 0 rgba(0,0,0.50,0.50);
+		background-image:url(img/beers-1283566_1280.jpg);
+		object-fit:cover;
+	}
+	50%{
+		background-color:blue;
+		left:10em;
+		top:10em;
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Safari */
+		transform: rotate(0deg);
+		border-radius: 40px;
+		height: 500px;
+		color:#FFF;
+		box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+		background-image:url(img/cheers-839865_1280.jpg);
+		object-fit:cover;
+	}
+	75%{
+		background-color:blue;
+		left:30em;
+		top:5em;
+		-ms-transform: rotate(360deg); /* IE 9 */
+		-webkit-transform: rotate(360deg); /* Safari */
+		transform: rotate(360deg);
+		border-radius: 40px;
+		width: 600px;
+		color:#FFF;
+		box-shadow: 0 8px 16px 0 rgba(1,1,1,1), 0 6px 20px 0 rgba(0,0,0.50,0.50);
+		background-image:url(img/nature-3033979_1280.jpg);
+		object-fit:cover;
+	}
+	100% {
+		background-color:red;
+		left:10em;
+		top:5em;
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Safari */
+		transform: rotate(0deg);
+		box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+		background-image:url(img/beer-advertising-2712521_1280.jpg);
+	}
+}
+
+</style>
+<body>
+	<div>Animation</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>carregar</title>
+</head>
+<style type="text/css">
+
+.flex{
+	display: flex;
+	display:-webkit-flex;
+}
+.position-center{
+	width: 100%;
+	height:  40em;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.objeto{
+	top: 100px;
+	left: -10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 30px;
+	background-color: red;
+}
+
+.objeto-animation{
+	animation-name: circular;
+	animation-duration: 20s;
+	animation-direction: alternaem;
+	animation-iteration-count: infinite;
+
+	background-color: blue;
+}
+@keyframes  circular{
+	0%{
+		top: 100em;
+		left: -10em;
+		background-color: red;
+	}
+	10%{
+		top: 80em;
+		left: -8.94em;
+		background-color: blue;
+	}
+	20%{
+		top: 60em;
+		left: -7.74em;
+		background-color: red;
+	}
+	30%{
+		top: 40em;
+		left: -6.32em;
+		background-color: blue;
+	}
+	40%{
+		top: 20em;
+		left: -4.47em;
+		background-color: red;
+	}
+	50%{
+		top: 0em;
+		left: 0em;
+		background-color: blue;
+	}
+	60%{
+		top: 20em;
+		left: 4.47em;
+		background-color: red;
+	}
+	70%{
+		top: 40em;
+		left: 6.32em;
+		background-color: blue;
+	}
+	80%{
+		top: 60em;
+		left: 7.74em;
+		background-color: red;
+	}
+	90%{
+		top: 80em;
+		left: 8.94em;
+		background-color: blue;
+	}
+	100%{
+		top: 100em;
+		left: 10em;
+		background-color: red;
+	}
+}
+</style>
+
+<body>
+	<div class="flex position-center">
+		<div class="objeto-animation objeto"></div>
+	</div>
+</body>
+</html>
